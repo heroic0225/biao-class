@@ -1,0 +1,253 @@
+<!-- <script>
+    var name = 'whh'
+
+    function sayHi() {
+        var name = 'lsd'
+        console.log('hi,' + name);
+    }
+
+    sayHi();
+    console.log(name)
+</script> -->
+
+
+<!-- <script>
+    function sayHi() {
+    var name = 'whh';
+    console.log('你好, ' + name);
+    }
+
+    console.log(name);
+    sayHi();
+</script> -->
+
+<!-- <script>
+    var nameA = 'lbb'       
+
+    function niHao() {
+        var nameB = 'whh';
+        console.log('你好, ' + nameB);
+    }
+
+    niHao();
+    console.log(nameA);
+</script> -->
+
+<!-- <script>
+    var person = 'lbb';
+
+    function niHao() {
+        var person = 'whh';
+        console.log(person);
+    }
+
+    niHao();
+    console.log(person);
+    niHao();
+</script> -->
+
+
+<!-- <script>
+;(function(){
+    var arr = [1,3,5,7,9];
+
+    function arrSum(arr) {
+        var sum = 0;
+
+        for (var i = 0; i < arr.length; i++) {
+            var item = arr[i];
+            sum = sum + item;
+
+        }
+
+        console.log(sum)
+    }
+
+    arrSum(arr);
+
+})(); -->
+<!-- </script> -->
+
+<!-- <script>
+
+  ;(function () {
+    'use strict';
+
+    var arr = [2, 4, 6, 8, 10, 11, 21];
+
+    function array_sum(arr) {
+      var sum = 0;
+
+      for(var i = 0; i < arr.length; i++) {
+        var item = arr[i];
+        sum = sum + item;
+      }
+
+
+      console.log(sum);
+    }
+
+    array_sum(arr);
+
+    array_sum([1, 2, 3])
+
+    array_sum([1, 1])
+  })();
+
+</script> -->
+
+<!-- <script>
+;(function(){
+    'user strict';
+    var arr = [1,3,5,7,9,11]
+    function arrSum(arr) {
+        var sum = 0;
+
+        for (var i =0; i < arr.length; i++) {
+            var item = arr[i];
+            sum = item + sum;
+        }
+        console.log(sum);
+    }
+
+
+
+    arrSum(arr);
+    arrSum([1,5,6,7,89524,12314])
+})();
+</script> -->
+
+<!-- <script>
+;(function() {
+    'user strict';
+    
+    function arrSum(arr) {
+
+    }
+
+
+
+    arrSum([1,2,3,4,5,6,7])
+})();
+</script>
+
+<script>
+
+</script> -->
+
+============================
+
+<!-- <script>
+    function search(keyword) {
+        //导入数据
+        var list = [
+            {
+                name: '王花花',
+                playing: ['CS', '红警'],
+            },
+            {
+                name: '李拴蛋',
+                playing: ['守望屁股', '吃鸡', 'CS'],
+            },
+            {
+                name: '牛备备',
+                playing: ['红警', '吃鸡'],
+            },
+        ]
+        //結果放入一個數組
+        var result = [];
+        //遍歷數組
+        for (var i = 0; i < list.length; i++) {
+            var item = list[i];
+            //如果对象的playing属性不等于-1，即对象存在该属性，则推到数组中
+            if (item.playing.indexOf(keyword) !== -1) {
+                result.push(item.name);
+            }
+        }
+
+
+        console.log(result);
+    }
+
+    search('吃鸡')
+    search('CS');//通过吃鸡搜到在玩这个游戏的人
+</script> -->
+
+==========================================
+
+<!-- <script>
+function search(keyword) {
+    var list = [
+            {
+                name: '王花花',
+                playing: ['CS', '红警'],
+            },
+            {
+                name: '李拴蛋',
+                playing: ['守望屁股', '吃鸡', 'CS'],
+            },
+            {
+                name: '牛备备',
+                playing: ['红警', '吃鸡'],
+            },
+        ]
+
+    var result = [];
+
+        //遍历
+    for (var i = 0; i < list.length; i++) {
+        var item = list[i];
+        if (item.playing.indexOf(keyword) !== -1) {
+                result.push(item.name);
+        }
+    }
+
+    console.log(result)
+
+
+    }
+
+search('CS') //通过游戏名找到人 -->
+<!-- search('吃鸡')
+</script>
+
+
+=====================================
+
+
+<script>
+    function makeArr(max) {
+        var arr = [];
+
+        for (var i = 1; i <= max; i++) {
+            arr.push(i);
+        }
+
+        console.log(arr)
+    }
+
+
+
+
+    makeArr(5)//写出一个最大为多少的数组
+</script> -->
+
+
+===============================================
+
+<script>
+    function makeArr(arr) {
+        var result = []
+        for (var i =0; i < arr.length; i++) {
+            var item = arr[i];
+            resrlt = result + item;
+        }
+
+        console.log(result)
+    }
+
+
+
+    makeArr(['yo', 'o', 'o', 'o'])
+</script>
+

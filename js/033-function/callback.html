@@ -1,0 +1,180 @@
+<!-- <script>
+    function makeMeal(first,second,third) {
+        console.log('买菜');
+        if (first) {
+            first();
+        }
+        console.log('洗菜');
+        if (second) {
+            
+        }
+        console.log('烧菜');
+    }
+
+    function buyPens() {
+        console.log('买两支笔');
+    }
+
+    makeMeal(buyPens,
+    function() {
+        console.log('洗个西红柿')
+
+    });
+</script> -->
+<!-- <script>
+    function meakMeal(first, second, third) {
+        console.log('买菜');
+        if (first) {
+            first();
+        }
+        console.log('洗菜');
+        if (second) {
+            second();
+        }
+        console.log('炒菜');
+        if (third) {
+            third();
+        }
+    }
+
+
+
+    meakMeal(function buyPens() {
+        console.log('我今天出去买菜');
+    },
+        function () {
+            console.log('我又洗了个西红柿');
+        },
+        function () {
+            console.log('我还炒了个马铃薯')
+        })
+</script> -->
+
+<!-- <script>
+    function sleep(before) {
+        if (before) {
+            before();
+        }
+        console.log('睡觉了');
+    }
+
+    sleep(function () {
+        console.log('You need to brash your teeth!')
+    })
+</script> -->
+
+<!-- <script>
+    function buy(money, success, fail) {
+        if (money > 0) {
+            console.log('下单成功');
+            if (success)
+                success();
+        } else {
+            if (fail) {
+                fail();
+                console.log('下单失败');
+
+            }
+
+        }
+    }
+    function onGameOrderSuccess() {
+        console.log('游戏单，无需实体发货');
+    };
+
+    function onTshirtOrderSuccess() {
+        console.log('服饰单');
+        console.log('通知仓库中');
+        console.log('已通知仓库，发货中');
+    }
+
+    function onOrderFail() {
+        console.log('钱呢')
+    }
+
+    buy(100, onGameOrderSuccess, onOrderFail);
+    buy(0, onTshirtOrderSuccess, onOrderFail);
+
+
+
+
+
+
+
+
+    buy()
+</script> -->
+
+
+<!-- <script>
+    function buy(money, success, fail) {
+        if (money > 0) {
+            console.log('YO，你买了东西');
+            if (success) {
+                success();
+            }
+        } else {
+            console.log('YO，你下单失败了');
+            if (fail) {
+                fail();
+            }
+        }
+
+    }
+    function gameOrder() {
+        console.log('你买了游戏单，自动发货，请查收');
+    }
+    function tshirtOrder() {
+        console.log('你买了实物单，注意物流信息');
+    }
+    function fail() {
+        console.log('可能余额不足呢');
+    }
+
+    buy(100, gameOrder);
+    buy(0, gameOrder, fail);
+</script> -->
+
+<script>
+    function buy(money,success,fail) {
+        if (money > 0) {
+            console.log('我要买东西');
+            if (success) {
+                success();
+            }
+        } else {
+            console.log('你下单失败了');
+            if (fail) {
+                fail();
+            }
+        }
+    }
+    function gameOrder() {
+        console.log('你买了游戏单，无需实体发货');
+    }
+    function foodOrder() {
+        console.log('您买了新鲜食物，注意保质期');
+    }
+    function fail() {
+        console.log('购买失败');
+    }
+
+    buy(1000,gameOrder);
+    buy(-1,foodOrder,fail);
+</script>
+
+<script>
+    function sleep(sth) {
+        if (sth) {
+            sth();
+        }
+
+        console.log('准备睡觉了');
+    }
+
+    function brash() {
+        console.log('你应该刷刷牙')
+    }
+
+    sleep(brash)
+</script>

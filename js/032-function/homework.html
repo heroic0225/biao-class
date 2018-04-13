@@ -1,0 +1,329 @@
+<!-- 1、用for循环写 -->
+<!-- <Script>
+    var list = [2, 4, 6, 8, 10];
+
+    var sum = 0;
+
+    for (var i = 0; i < list.length; i++) {
+        var item = list[i];
+        sum = sum + item;
+    }
+    console.log(sum); 
+</Script> -->
+
+<!-- <script>   
+    
+    
+    function getSum(a) {
+   
+        var sum = 0;
+        for (var i = 0; i < a.length; i++) {
+            var item = a[i];
+            sum = item + sum;
+        }
+        console.log(sum);
+
+        
+    }
+getSum([2,4,6,8,10]);
+
+</script> -->
+<!-- ===================================== -->
+<!-- 2.遍历['yo', 'o', 'o', 'o'],并将其拼接 -->
+<!-- <script>
+    var arr = ['yo', 'o', 'o', 'o'];
+    var result = ''
+    for (var i = 0; i < arr.length; i++) {
+        var item = arr[i];
+        result = result + item;
+    }
+    console.log(result);
+    
+</script> -->
+
+<!-- <script>
+    function getAll(arr) {
+        var result = ''
+        for (var i = 0; i < arr.length; i++) {
+            var item = arr[i];
+            result = result + item;
+        }
+        console.log(result);
+    }
+
+    getAll(['yo', 'o', 'o','o']);
+</script> -->
+<!-- ==================================== -->
+<!-- 3.遍历数组中的所有偶数并将它们放入一个新的数组 -->
+<!-- 使用方法push -->
+<!-- <script>
+    var result = [];
+    var arr = [1,6,7,8,9,4,1,3,16];
+    for (var i = 0; i < arr.length; i++) {
+        var item = arr[i];
+        if (item % 2 == 0) {
+            result.push(item);
+        }
+    }
+    console.log(result);
+
+</script> -->
+
+<!-- <script>
+    function getAllEven(arr) {
+        var result = [];
+        for (var i = 0; i < arr.length; i++) {
+            var item = arr[i];
+            if (item % 2 == 0) {
+                result.push(item);
+            }
+        }
+        console.log(result)
+    }
+
+    getAllEven([5,6,9,7,5,1,2,6,4,8,9,154])
+</script> -->
+
+<!-- ============================ -->
+
+
+<!-- 4.通过遍历生成数组 -->
+
+<!-- <script>
+    var result = [];
+    for (var i = 1;i < 6; i++) {
+        result.push(i);
+    }
+    console.log(result);
+</script> -->
+
+<!-- <script>
+    var result = [];
+    for (var i = 1; i < 10;i += 2) {
+        result.push(i)
+    }
+    console.log(result)
+</script> -->
+
+<!-- <script>
+    function makeArr(max,length) {
+        var result = [];
+        for ( var i = 1; i < max; i += length) {
+            result.push(i);
+        }
+        console.log(result);
+    }
+
+    makeArr(9,2);
+</script> -->
+
+<!-- ====================== -->
+
+<!-- 6.遍历下方数组，找出工资大于100的人，将找到的人放到一个数组里。 -->
+
+<!-- <script>
+    var arr = [
+        {
+            name: '王花花',
+            salary: 100,
+        },
+        {
+            name: '李拴蛋',
+            salary: 200,
+        },
+        {
+            name: '牛备备',
+            salary: 300,
+        },
+    ];
+
+    var result = [];
+
+    for (var i = 0; i < arr.length; i++) {
+        var item = arr[i];
+        // console.log(item);
+        if (item.salary > 100) {
+            result.push(item.name);
+        }
+    }
+    console.log(result);
+</script> -->
+
+
+<!-- <script>
+
+    var arr = [
+        {
+            name: '王花花',
+            salary: 100,
+        },
+        {
+            name: '李拴蛋',
+            salary: 200,
+        },
+        {
+            name: '牛备备',
+            salary: 300,
+        },
+    ];
+
+    function getRichName(num) {
+        var result = [];
+        for (var i = 0; i < arr.length; i++) {
+            var item = arr[i];
+            if (item.salary > num) {
+                result.push(item.name);
+            }
+        }
+        console.log(result);
+    }
+
+
+    getRichName(200);
+</script> -->
+
+
+<!-- 7.遍历下方数组，找出姓王的人并他们放入一个数组
+<script>
+    var arr = [
+        {
+            name: '王花花',
+        },
+        {
+            name: '王拴蛋',
+        },
+        {
+            name: '牛备备',
+        },
+    ]
+
+    var result = [];
+
+    for (var i = 0; i < arr.length; i++) {
+        var item = arr[i];
+        if (item.name.startsWith('王')) {
+            result.push(item.name);
+        }
+    }
+    console.log(result); -->
+
+<!-- </script>  -->
+
+<!-- 8.遍历下方函数，完成一个搜索函数
+
+<script>
+    var arr = [
+        {
+            name: '王花花',
+            playing: ['CS', '红警'],
+        },
+        {
+            name: '李拴蛋',
+            playing: ['守望屁股', '吃鸡', 'CS'],
+        },
+        {
+            name: '牛备备',
+            playing: ['红警', '吃鸡'],
+        },
+    ]
+    var result = [];
+    function search(keyword) {
+        for (var i = 0; i < arr.length; i++) {
+            var item = arr[i];
+            if (item.playing.indexOf(keyword) !== -1) {
+                result.push(item.name);
+            }
+        }
+        console.log(result);
+    }
+
+    search('CS')
+</script> -->
+
+<!-- <script>-->
+<!--/*-->
+<!--* 看哪些玩家正在玩搜索的游戏-->
+<!--* @keyword string 游戏名关键词-->
+<!--* @return undefined-->
+<!--* */-->
+<!--function search(keyword) {-->
+<!--var list = [-->
+<!--{-->
+<!--name: '王花花',-->
+<!--playing: ['CS', '红警'],-->
+<!--},-->
+<!--{-->
+<!--name: '李拴蛋',-->
+<!--playing: ['守望屁股', '吃鸡', 'CS'],-->
+<!--},-->
+<!--{-->
+<!--name: '牛备备',-->
+<!--playing: ['红警', '吃鸡'],-->
+<!--},-->
+<!--];-->
+
+<!--/*不知道能不能搜到，所以默认为空数组*/-->
+<!--var result = [];-->
+
+<!--/*遍历每个用户*/-->
+<!--for(var i = 0; i < list.length; i++) {-->
+<!--/*缓存当前用户*/-->
+<!--var item = list[i];-->
+<!--/*拿到当前用户的游戏列表（数组）*/-->
+<!--var playing = item.playing;-->
+
+<!--/*如果游戏列表中有搜索的游戏，也就是只要indexOf方法没有返回-1*/-->
+<!--if(playing.indexOf(keyword) !== -1) {-->
+<!--/*就将其推到搜索结果中*/-->
+<!--result.push(item.name);-->
+<!--}-->
+<!--}-->
+
+<!--console.log(result);-->
+<!--}-->
+
+<!--search('吃鸡');-->
+<!--</script> -->
+
+
+
+9.遍历下方函数，完成一个搜索函数
+<script>
+    var arr = [
+        {
+            name: '王花花',
+            playing: ['CS', '红警'],
+        },
+        {
+            name: '李拴蛋',
+            playing: ['守望屁股', '吃鸡', 'CS'],
+        },
+        {
+            name: '牛备备',
+            playing: ['红警', '吃鸡'],
+        },
+        {
+            name: '木哈哈',
+            playing: ['红警', 'CS', '吃鸡'],
+        },
+    ]
+
+    var result = [];
+    function search(arr,arr1) {
+        for1:for (var i = 0; i < arr.length; i++) {
+
+            var item = arr[i];
+            var playing = item.playing;
+
+            for (var j = 0; j < arr1.length; j++) {
+                if (playing.indexOf(keyword) !== -1) {
+                    continue for1;
+
+                }
+
+            } result.push(item.name);
+        }
+        console.log(result);
+    }
+// search('CS');
+</script>
